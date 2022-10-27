@@ -1,0 +1,231 @@
+::-webkit-input-placeholder {
+  color: #808080;
+}
+
+::-moz-placeholder {
+  color: #808080;
+}
+
+:-moz-placeholder {
+  color: #808080;
+}
+
+:-ms-input-placeholder {
+  color: #808080;
+}
+
+body {
+  background: url(../img/mainbg.jpg);
+  background-color: #333;
+  background-blend-mode: multiply;
+  height: 100vh;
+  font-family: arial, sans-serif;
+  color: #e8e8e8;
+}
+
+.container {
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.form {
+  width: 350px;
+  position: absolute;
+  margin-top: 35%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.form input {
+  padding: 8px;
+  border-radius: 3px;
+  background: transparent;
+}
+
+.form_active {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.form__logo {
+  background: url(../img/logo.png) center top/cover no-repeat;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.form__result {
+  margin-top: 15px;
+}
+
+.form__loader {
+  text-align: center;
+  display: none;
+}
+
+.form__title {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form__title h1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__title h1:before,
+.form__title h1:after {
+  content: '';
+  background: #7e7e7e;
+  height: 1px;
+  width: 60px;
+  display: block;
+}
+
+.form__input {
+  margin-bottom: 15px;
+}
+
+.form__input input {
+  width: 95%;
+  border: dashed 1px #444;
+  font-size: 15px;
+  color: #a5a3a3;
+  outline: none;
+  -webkit-transition: border .5s ease-out;
+  transition: border .5s ease-out;
+}
+
+.form__input input:focus {
+  border: 1px solid #483d8b;
+}
+
+.form__autologin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__autologin input {
+  width: 5%;
+  margin: 0px 6px;
+}
+
+.form__button input {
+  width: 100%;
+  border: 1px solid #483d8b;
+  color: #fff;
+  font-size: 15px;
+}
+
+.form__button input:hover {
+  background: #483d8b;
+  cursor: pointer;
+}
+
+.form__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid #fff;
+  margin-top: 30px;
+}
+
+.form__information a {
+  text-decoration: none;
+  color: #9400D3;
+}
+
+.form__information a:hover {
+  color: #8A2BE2;
+  text-decoration: underline;
+}
+
+.appearance {
+  -webkit-animation: appearance 0.5s;
+          animation: appearance 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.disappearance {
+  -webkit-animation: disappearance 0.5s;
+          animation: disappearance 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+@-webkit-keyframes appearance {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes disappearance {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  50% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+
+@keyframes disappearance {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  50% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+/*# sourceMappingURL=main.css.map */

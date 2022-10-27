@@ -1,0 +1,13 @@
+RewriteEngine on
+
+RewriteRule ^activation/([a-zA-Z0-9_-]+)$ activation.php?code=$1
+RewriteRule ^activation/([a-zA-Z0-9_-]+)/$ activation.php?code=$1
+Options All -Indexes
+<Files "config.php">
+  Order Allow,Deny
+  Deny from All
+</Files>
+<Files "cron.php">
+  Order Allow,Deny
+  Deny from All
+</Files>
